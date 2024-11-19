@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.datatables.net/v/bs5/dt-2.1.8/datatables.min.css" rel="stylesheet">
+        <style>
+            .nav-link {
+              position: relative;
+              text-decoration: none; /* Remove default underline */
+              transition: color 0.3s ease;
+            }
+        
+            .nav-link:hover {
+              color: #ffffff; /* Keep the hover text white */
+            }
+        
+            .nav-link:hover::after {
+              content: "";
+              position: absolute;
+              bottom: 0; /* Place underline below text */
+              left: 0;
+              width: 100%;
+              height: 2px; /* Thickness of the underline */
+              background-color: #ffffff; /* White underline */
+              transition: width 0.3s ease;
+            }
+        
+            .nav-link::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: transparent;
+              transition: width 0.3s ease;
+            }
+          </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">User Management</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-center">
+              <a class="nav-link text-white fw-bold mx-3" style="font-size: 1.25rem;" href="/">Home</a>
+              <a class="nav-link text-white fw-bold mx-3" style="font-size: 1.25rem;" href="/add">Add User+</a>
+              <a class="nav-link text-white fw-bold mx-3" style="font-size: 1.25rem;" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
